@@ -1,0 +1,14 @@
+clc;
+close all;
+clear;
+[r,w]=meshgrid(0:0.1:2*pi);
+z=(r.*cos(w))+j.*r.*sin(w);
+x=1./(z-0.5);
+plot(r.*cos(w),r*sin(w),abs(x));
+subplot(3,1,1);
+xlabel("cos");
+ylabel("sin");
+zlabel("x(z)");
+x2=1./(z-0.5*(r.*cos(pi./2)+r.*j.*sin(pi./2));
+plot(r.*cos(w),r.*sin(w),abs(x2));
+subplot(3,1,2);
